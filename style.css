@@ -1,0 +1,166 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+}
+header{
+
+    height: 75vh;
+    background: aliceblue;
+    background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    
+    padding: 0 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+.menu{
+    padding: 2rem 3rem;
+    /*background: rgba(10, 69, 121, 0.075);*/
+
+    border-radius: 5rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 4.5rem;
+    
+}
+
+.menu ul li a, .menu ul li span, .option i{
+ text-decoration: none;
+ color:rgba(255, 255, 255, 0.856);
+ font-weight: bold;
+ transition:  0.3s;
+ text-transform: uppercase;
+ font-size: 1.3rem;
+}
+.option i{
+    cursor: pointer;
+    font-size: 1.9rem;
+   
+}
+.menu ul li span{
+    cursor: pointer;
+}
+.menu ul li span i{
+    display: inline-flex;
+    transition: transform .3s;
+}
+.menu ul li span.open i{
+    transform: rotate(180deg);
+}
+
+.menu ul li a:hover, .menu ul li span:hover, .option i:hover{
+    color: rgb(255, 255, 255);
+}
+
+.logo img{
+    width: 5rem;
+}
+
+.subMenu{
+    display: flex;
+
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+   
+    opacity: 0;
+    transition: all .3s;
+    visibility: hidden;
+}
+.subMenu.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.subMenu ul li p{
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+.subMenu ul li p::after{
+    content: "";
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background:  #00000023;
+}
+.listMenu{
+    margin: 0 auto;
+    padding: 3.2rem 5rem 5rem;
+    background: rgba(34, 42, 49, 0.925);
+    list-style: none;
+    border-radius: .7rem;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.288);
+}
+.listMenu li a{
+    
+    color: rgba(255, 255, 255, 0.425) !important;
+    text-transform: none !important;
+    padding-top: 1rem;
+    display: block;
+    text-decoration: none;
+    font-weight: 400 !important;
+    font-size: 1.2rem ;
+}
+.listMenu li a:hover{
+    color: rgba(0, 0, 0, 0.596) !important;
+}
+.listMenu.MoreOptions {
+    
+    margin-right: 1.1rem;
+    padding: 3.2rem 4rem 2rem;
+    text-align: end;
+}
+.subMenu.MenuExtra{
+    z-index: -1;
+    top:3rem;
+}
+
+.socialBar{
+    height: 3rem;
+    width: 100%;
+}
+
+.start{
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
